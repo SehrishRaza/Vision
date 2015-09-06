@@ -18,8 +18,6 @@ public class HomePage {
     public HomePage(WebDriver driver) {
         this.driver = driver;
        cusermenuMain  = this.driver.findElement(By.id("cusermenu"));
-
-
     }
 
     public void clickLoginLink() {
