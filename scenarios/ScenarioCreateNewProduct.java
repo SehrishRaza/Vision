@@ -1,6 +1,3 @@
-import com.thoughtworks.selenium.Selenium;
-
-import createProduct.CreateNewProduct;
 import createProduct.NewProductDetailTab;
 import createProduct.NewProductPricingTab;
 import createProduct.SelectColourOption;
@@ -9,21 +6,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import topNav.ProductNav;
-import topNav.TopNav;
-
-import javax.swing.*;
-import java.sql.Driver;
-import java.util.List;
 
 import static org.hamcrest.core.Is.is;
 
@@ -50,7 +38,7 @@ public class ScenarioCreateNewProduct {
     public void mainTest() throws InterruptedException {
 
         ProductNav productNav = new ProductNav(driver);
-        productNav.clickNewProdNav();
+        productNav.clickOnItem(1);
         new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.id("productform")));
 
         NewProductDetailTab newProductDetailTab = new NewProductDetailTab(driver);
@@ -75,7 +63,7 @@ public class ScenarioCreateNewProduct {
         newProductPricingTab.saveProduct();
         WebElement addProdSuccess = (new WebDriverWait(driver, 15))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.className("addProd_message")));
-        Assert.assertTrue(driver.findElement(By.className("addProd_message")).getText().equalsIgnoreCase("Product has been saved and is live."));
+        Assert.assertTrue(addProdSuccess.getText().equalsIgnoreCase("Product has been saved and is live."));
 
 
 

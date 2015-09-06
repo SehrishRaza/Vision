@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Created by muhammadraza on 05/09/2015.
+ * Created by sehrishraza on 05/09/2015.
  */
 public class ScenarioLoginVision {
     private WebDriver driver;

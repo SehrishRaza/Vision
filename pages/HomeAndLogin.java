@@ -4,7 +4,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
- * Created by muhammadraza on 05/09/2015.
+ * Created by sehrishraza on 05/09/2015.
  */
 public class HomeAndLogin {
 

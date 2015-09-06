@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
- * Created by muhammadraza on 04/09/2015.
+ * Created by sehrishraza on 04/09/2015.
  */
 public class NewProductDetailTab extends CreateNewProduct {
 

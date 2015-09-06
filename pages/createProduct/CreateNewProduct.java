@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 /**
- * Created by muhammadraza on 04/09/2015.
+ * Created by sehrishraza on 04/09/2015.
  */
 public class CreateNewProduct {
 

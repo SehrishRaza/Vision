@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
- * Created by muhammadraza on 03/09/2015.
+ * Created by sehrishraza on 03/09/2015.
  */
 public class LoginPage {
 

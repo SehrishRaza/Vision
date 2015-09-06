@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 /**
- * Created by muhammadraza on 03/09/2015.
+ * Created by sehrishraza on 03/09/2015.
  */
 public class HomePage {
 
